@@ -11,7 +11,7 @@ from basicCalc import basicCalc
 # from font_change import font_change
 # from hogwarts_house import hogwarts_house
 from mad_lib import madlib
-# from mean_median import mean_median
+from mean_median import mean_median
 # from meme_gen import meme_gen
 # from menu import menu
 # from Periodic_table import Periodic_table
