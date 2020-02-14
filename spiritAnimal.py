@@ -12,7 +12,7 @@ class spiritAnimal(Frame):
         Label(self, text = "Answer these questions to find which princess you are!").grid(row = 0, column = 1, columnspan = 2)
 
         # one word
-        Label(self, text="Pick one word that describes yourself:").grid(row=1, column=0, sticky=W)
+        Label(self, text="Pick one word that describes yourself:", font = ("Verdana", 20)).grid(row=1, column=0, sticky=W)
 
         self.desc = StringVar()
         self.desc.set(None)
@@ -28,7 +28,7 @@ class spiritAnimal(Frame):
         self.color = StringVar()
         self.color.set(None)
 
-        Label(self, text="Pick a Color:").grid(row=3, column=0, sticky=W)
+        Label(self, text="Pick a Color:", font = ("Verdana", 20)).grid(row=3, column=0, sticky=W)
 
         color = ["red", "orange", "yellow", "green", "blue", "purple", "pink"]
         column = 1
@@ -40,7 +40,7 @@ class spiritAnimal(Frame):
         self.drink = StringVar()
         self.drink.set(None)
 
-        Label(self, text="Pick a Food").grid(row=5, column=0, sticky=W)
+        Label(self, text="Pick a Food", font = ("Verdana", 20)).grid(row=5, column=0, sticky=W)
 
         drink = ["OJ", "coffee", "fanta", "sprite", "coca-cola", "Brisk Iced Tea", "water", "Seltzer"]
         column = 1
@@ -52,7 +52,7 @@ class spiritAnimal(Frame):
         self.activity = StringVar()
         self.activity.set(None)
 
-        Label(self, text="Pick an Activity").grid(row=7, column=0, sticky=W)
+        Label(self, text="Pick an Activity", font = ("Verdana", 20)).grid(row=7, column=0, sticky=W)
 
         activity = ["excercise", "eat", "sleep", "cry", "hanging with friends", "reading books", "video games", "swim"]
         column = 1
