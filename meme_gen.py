@@ -2,29 +2,25 @@ import random
 from tkinter import *
 
 class meme_gen(Frame):
-    def __init__(self, master):
-        super().__init__(master)
-        print("create meme gen")
+    def __init__(self, master, file_name):
+        super(meme_gen, self).__init__(master)
         self.image_dict = {}
-        text_file = open("image_list", "r")
+        text_file = open(file_name, "r")
         for line in text_file:
             l = line.strip()
             mem = l.split(",")
             self.image_dict[mem[0]] = mem[1]
-        self.create_widgets()
-        self.grid()
 
     def create_widgets(self):
-        Button(self, text="Generate Meme", command=self.generate
+        Button(text="Generate Meme", command=self.generate
                ).grid(row=0, column=0, sticky=N)
 
     def generate(self):
-        meme_num = str(random.randrange(1,31))
-        image = PhotoImage(file="images/meme"+meme_num+".gif")
-        i = Label(self, image=image)
-        i.photo = image
-        i.grid(row=5, column=0, sticky=E)
-
+        meme_num = random.randrange(1, 31)
+        meme = PhotoImage(file="meme" + meme_num + ".txt")
+        m = Label(self, image=meme)
+        m.photo = meme
+        m.grid(row=1, column=0, sticky=N)
 
 root = Tk()
 root.title("Meme Generator!")
