@@ -1,10 +1,10 @@
-from tkinter import *
+.0from tkinter import *
 from academy import academy
 from basicCalc import basicCalc
 from calendar import calendar
 from click_counter import click_counter
 from color_changer import color_changer
-# from color_person import color_person
+from color_quiz import color
 from disney_princess import disney_princess
 from font_change import font_change
 from hogwarts_house import hogwarts
@@ -17,7 +17,7 @@ from rand_num_gen import rand_num_gen
 # from spirit_animal import spirit_animal
 from surprise import surprise
 # from third_grade_quiz import third_grade_quiz
-# from wallet import wallet
+from wallet import wallet
 from zodiacQuiz import zodiac
 
 
