@@ -1,15 +1,16 @@
 
 from tkinter import *
 
-class Application(Frame):
+class madlib(Frame):
 
    """ GUI application that creates a story based on user init. """
 
    def __init__(self, master):
        """Initialize Frame"""
-       super(Application, self).__init__(master)
+       super(madlib, self).__init__(master)
        self.grid()
        self.create_widgets()
+       #self.madLib_call()
 
    def create_widgets(self):
        # create instruction label
@@ -191,5 +192,5 @@ class Application(Frame):
 # main
 root = Tk()
 root.title("Original Fantasy")
-app = Application(root)
+app = madlib(root)
 root.mainloop()
