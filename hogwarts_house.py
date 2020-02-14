@@ -1,0 +1,62 @@
+from tkinter import *
+
+class Application(Frame):
+    def __init__(self, master):
+        super(Application, self).__init__(master)
+        self.grid()
+        self.create_widgets()
+
+    def create_widgets(self):
+        Label(self, text = "What Hogwart's House Do You Belong In, Based Off Of Your Ideal Date?").grid(row = 0, column = 1, columnspan = 2)
+
+        Label(self, text="Pick A Place:").grid(row=1, column=0, sticky=W)
+        self.place = StringVar()
+        self.place.set(None)
+        places = ["movies", "dungeon", "beach", "museum"]
+        column = 1
+        for word in places:
+            Radiobutton(self, text=word, variable=self.place, value=word).grid(row=2, column=column, sticky=W)
+            column += 1
+
+        Label(self, text="Pick A Gift For Your Date:").grid(row=3, column=0, sticky=W)
+        self.gift = StringVar()
+        self.gift.set(None)
+        gifts = ["chocolate", "vacuum cleaner set", "teddy bear", "white van"]
+        column = 1
+        for word in gifts:
+            Radiobutton(self, text=word, variable=self.gift, value=word).grid(row=4, column=column, sticky=W)
+            column += 1
+
+        Label(self, text="What Will You Pick Up Your Date In:").grid(row=5, column=0, sticky=W)
+        self.ride = StringVar()
+        self.ride.set(None)
+        rides = ["jet", "ferrari", "tricycle", "submarine"]
+        column = 1
+        for word in rides:
+            Radiobutton(self, text=word, variable=self.ride, value=word).grid(row=6, column=column, sticky=W)
+            column += 1
+
+        submit_bttn = Button(self, text="Click to See Your Result!", command=self.house)
+        submit_bttn.grid(row=7, column=0, sticky=W)
+        self.story_txt = Text(self, width=75, height=10, wrap=WORD)
+        self.story_txt.grid(row=8, column=0, columnspan=4)
+
+    def house(self):
+        place = self.place.get()
+        finalAnswer = ""
+        if self.place.get() == "movies":
+            finalAnswer += "You belong in Hufflepuff!"
+        if self.place.get() == "dungeon":
+            finalAnswer += "You belong in Slytherin!"
+        if self.place.get() == "beach":
+            finalAnswer += "You belong in Gryffindor!"
+        if self.place.get() == "museum":
+            finalAnswer += "You belong in Ravenclaw!"
+
+        self.story_txt.delete(0.0, END)
+        self.story_txt.insert(0.0, finalAnswer)
+
+root = Tk()
+root.title("Hogwart's House!")
+app = Application(root)
+root.mainloop()
