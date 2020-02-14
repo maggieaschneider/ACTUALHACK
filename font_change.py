@@ -1,6 +1,6 @@
 from tkinter import *
 
-class color_changer(Frame):
+class font_change(Frame):
    def __init__(self, master):
        super().__init__(master)
        self.grid()
@@ -12,13 +12,13 @@ class color_changer(Frame):
        self.message = Text(self, wrap = WORD, height = 10, width = 10)
        self.message.grid(row = 0, column = 1)
        self.color_button = Button(self,
-              text="Color ",
+              text="Font ",
               command=self.change
               )
        self.color_button.grid(row=1, column=0, sticky=W)
        Label(self, text = "Output"
              ).grid(row = 2, column = 0, sticky = W)
-       self.output = Text(self, wrap = WORD, height = 10, width = 10, fg = "red")
+       self.output = Text(self, wrap = WORD, height = 10, width = 10, font = "IMPACT")
        self.output.grid(row = 2, column = 1)
 
    def change(self):
@@ -26,6 +26,6 @@ class color_changer(Frame):
        self.output.delete(0.0, END)
        self.output.insert(0.0, new_msg)
 root = Tk()
-root.title("Color Changer!")
-app = color_changer(root)
+root.title("Font Changer!")
+app = font_change(root)
 root.mainloop()
