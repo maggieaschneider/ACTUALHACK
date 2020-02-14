@@ -24,6 +24,7 @@ class meme_gen(Frame):
         i = Label(self, image=image)
         i.photo = image
         i.grid(row=5, column=0, sticky=E)
+        self.image.delete(0.0, END)
 
 
 root = Tk()

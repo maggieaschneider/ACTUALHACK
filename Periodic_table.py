@@ -14,15 +14,15 @@ class Periodic_table(Frame):
         self.grid()
 
     def create_widgets(self):
-        periodic = PhotoImage(file="images/period_table.png")
-        i = Label(self, image=periodic)
-        i.photo = periodic
-        i.grid(row=0, column=0)
+        periodic = PhotoImage(file="images/periodic_table.gif")
+        p = Label(self, image=periodic)
+        p.photo = periodic
+        p.grid(row=0, column=0)
 
 
 
 root = Tk()
 root.title("Periodic Table!")
-root.geometry("1000x1400")
+root.geometry("1100x1400")
 app = Periodic_table(root)
 root.mainloop()

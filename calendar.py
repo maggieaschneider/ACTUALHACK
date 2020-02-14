@@ -1,24 +1,28 @@
 from tkinter import *
 
+
 class calendar(Frame):
-    def __init__(self, master, file_name):
-        super(calendar, self).__init__(master)
+    def __init__(self, master):
+        super().__init__(master)
         self.image_dict = {}
-        text_file = open(file_name, "r")
+        text_file = open("image_list", "r")
         for line in text_file:
-            gd = line.strip()
-            bruh = gd.split(",")
-            self.image_dict[bruh[0]]=bruh[1]
+            l = line.strip()
+            mem = l.split(",")
+            self.image_dict[mem[0]] = mem[1]
+        self.create_widgets()
+        self.grid()
 
     def create_widgets(self):
-        cal = self.image_dict[0]
-        calend = PhotoImage(file= 'images/' + cal.calend)
-        c = Label(self, image=calend)
-        c.photo = calend
-        c.grid(row=0, column=0, sticky=N)
+        cal = PhotoImage(file="images/calendar.gif")
+        c = Label(self, image=cal)
+        c.photo = cal
+        c.grid(row=0, column=0)
+
+
 
 root = Tk()
 root.title("Calendar!")
-root.geometry("1000x1400")
+root.geometry("600x500")
 app = calendar(root)
 root.mainloop()
