@@ -1,8 +1,8 @@
 from tkinter import *
 
-class Application(Frame):
+class disney_princess(Frame):
     def __init__(self, master):
-        super(Application, self).__init__(master)
+        super(disney_princess, self).__init__(master)
         self.grid()
         self.create_widgets()
 
@@ -102,6 +102,6 @@ class Application(Frame):
 
 root = Tk()
 root.title("Princesses!")
-app = Application(root)
+app = disney_princess(root)
 root.mainloop()
 
