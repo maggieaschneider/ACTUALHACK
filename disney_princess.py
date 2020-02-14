@@ -10,7 +10,7 @@ class disney_princess(Frame):
         Label(self, text = "Answer these questions to find which princess you are!").grid(row = 0, column = 1, columnspan = 2)
 
         # animal
-        Label(self, text="Pick an Animal:").grid(row=1, column=0, sticky=W)
+        Label(self, text="Pick an Animal:", font = ("System", 20)).grid(row=1, column=0, sticky=W)
 
         self.animal = StringVar()
         self.animal.set(None)
@@ -26,7 +26,7 @@ class disney_princess(Frame):
         self.color = StringVar()
         self.color.set(None)
 
-        Label(self, text="Pick a Color:").grid(row=3, column=0, sticky=W)
+        Label(self, text="Pick a Color:", font = ("System", 20)).grid(row=3, column=0, sticky=W)
 
         color = ["red", "orange", "yellow", "green", "blue", "purple", "pink"]
         column = 1
@@ -38,7 +38,7 @@ class disney_princess(Frame):
         self.food = StringVar()
         self.food.set(None)
 
-        Label(self, text="Pick a Food").grid(row=5, column=0, sticky=W)
+        Label(self, text="Pick a Food", font = ("System", 20)).grid(row=5, column=0, sticky=W)
 
         food = ["apple pie", "croissant", "ice cream", "oatmeal", "cake", "lobster", "fruit"]
         column = 1
@@ -50,7 +50,7 @@ class disney_princess(Frame):
         self.activity = StringVar()
         self.activity.set(None)
 
-        Label(self, text="Pick an Activity").grid(row=7, column=0, sticky=W)
+        Label(self, text="Pick an Activity:", font = ("System", 20)).grid(row=7, column=0, sticky=W)
 
         activity = ["traveling", "dancing", "swimming", "sleeping", "braiding hair", "cooking", "excercising"]
         column = 1
@@ -62,7 +62,7 @@ class disney_princess(Frame):
         self.season = StringVar()
         self.season.set(None)
 
-        Label(self, text="Pick a Season").grid(row=9, column=0, sticky=W)
+        Label(self, text="Pick a Season:", font = ("System", 20)).grid(row=9, column=0, sticky=W)
 
         season = ["fall", "winter", "spring", "summer"]
         column = 1
