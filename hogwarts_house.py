@@ -1,8 +1,8 @@
 from tkinter import *
 
-class Application(Frame):
+class hogwarts(Frame):
     def __init__(self, master):
-        super(Application, self).__init__(master)
+        super(hogwarts, self).__init__(master)
         self.grid()
         self.create_widgets()
 
@@ -58,5 +58,5 @@ class Application(Frame):
 
 root = Tk()
 root.title("Hogwart's House!")
-app = Application(root)
+app = hogwarts(root)
 root.mainloop()
