@@ -74,7 +74,4 @@ class hogwarts(Frame):
         self.story_txt.delete(0.0, END)
         self.story_txt.insert(0.0, finalAnswer)
 
-root = Tk()
-root.title("Hogwart's House!")
-app = hogwarts(root)
-root.mainloop()
+

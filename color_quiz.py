@@ -82,7 +82,4 @@ class color(Frame):
         self.story_txt.delete(0.0, END)
         self.story_txt.insert(0.0, finalAnswer)
 
-root = Tk()
-root.title("Personality Color!")
-app = color(root)
-root.mainloop()
+

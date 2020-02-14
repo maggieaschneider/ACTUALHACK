@@ -95,7 +95,3 @@ class menu(Frame):
             self.total += 4.33
        answer = Label(self, text = self.total).grid(row = 5, column = 2)
        answer = ("%.1f")
-root = Tk()
-root.title("Menu and Total Cost")
-app = menu(root)
-root.mainloop()

@@ -21,8 +21,3 @@ class Periodic_table(Frame):
 
 
 
-root = Tk()
-root.title("Periodic Table!")
-root.geometry("1100x1400")
-app = Periodic_table(root)
-root.mainloop()

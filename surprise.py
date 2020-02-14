@@ -21,8 +21,3 @@ class surprise(Frame):
 
 
 
-root = Tk()
-root.title("Surprise!")
-root.geometry("375x650")
-app = surprise(root)
-root.mainloop()

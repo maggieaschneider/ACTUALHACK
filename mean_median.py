@@ -45,7 +45,3 @@ class mean_median(Frame):
         mean = self.total/len(numlist)
         self.answer["text"] = mean
 
-root = Tk()
-root.title("Mean & Median!")
-app = mean_median(root)
-root.mainloop()
