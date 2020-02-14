@@ -16,14 +16,14 @@ class meme_gen(Frame):
 
     def create_widgets(self):
         Button(self, text="Generate Meme", command=self.generate
-               ).grid(row=0, column=1, sticky=N)
+               ).grid(row=0, column=0, sticky=N)
 
     def generate(self):
         meme_num = str(random.randrange(1,31))
         image = PhotoImage(file="images/meme"+meme_num+".gif")
         i = Label(self, image=image)
         i.photo = image
-        i.grid(row=5, column=1, sticky=E)
+        i.grid(row=5, column=0, sticky=E)
 
 
 root = Tk()
