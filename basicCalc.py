@@ -1,8 +1,8 @@
 from tkinter import *
 
-class Application(Frame):
+class basicCalc(Frame):
     def __init__(self, master):
-        super(Application, self).__init__(master)
+        super(basicCalc, self).__init__(master)
         self.grid()
         self.create_widgets()
 
@@ -46,5 +46,5 @@ class Application(Frame):
 
 root = Tk()
 root.title("Calculator!")
-app = Application(root)
+app = basicCalc(root)
 root.mainloop()

@@ -1,7 +1,7 @@
 from tkinter import *
 # from academy import academy
 # from aesthetic import aesthetic
-# from Basic_calc import Basic_calc
+from basicCalc import basicCalc
 # from calendar import calendar
 # from click_counter import click_counter
 # from color_change import color_change
