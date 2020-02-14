@@ -2,19 +2,19 @@ from tkinter import *
 from academy import academy
 # from aesthetic import aesthetic
 from basicCalc import basicCalc
-# from calendar import calendar
+from calendar import calendar
 from click_counter import click_counter
 from color_changer import color_changer
 # from color_person import color_person
 from disney_princess import disney_princess
 # from emoji_gen import emoji_gen
 from font_change import font_change
-from hogwarts_house import hogwarts_house
+from hogwarts_house import hogwarts
 from mad_lib import madlib
 from mean_median import mean_median
-# from meme_gen import meme_gen
+from meme_gen import meme_gen
 from menu import menu
-# from Periodic_table import Periodic_table
+from Periodic_table import Periodic_table
 from rand_num_gen import rand_num_gen
 # from spirit_animal import spirit_animal
 # from surprise import surprise
