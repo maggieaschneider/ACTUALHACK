@@ -101,7 +101,7 @@ class Application(Frame):
 
 
 root = Tk()
-root.title("Rhianna's Mad Lib!")
+root.title("Princesses!")
 app = Application(root)
 root.mainloop()
 
