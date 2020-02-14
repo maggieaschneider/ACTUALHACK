@@ -55,7 +55,7 @@ class hogwarts(Frame):
             column += 1
 
         submit_bttn = Button(self, text="Click to See Your Result!", command=self.house)
-        submit_bttn.grid(row=11, column=0, sticky=W)
+        submit_bttn.grid(row=11, column=1, sticky=E)
         self.story_txt = Text(self, width=75, height=10, wrap=WORD)
         self.story_txt.grid(row=12, column=0, columnspan=4)
 

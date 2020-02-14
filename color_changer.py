@@ -9,16 +9,16 @@ class color_changer(Frame):
 
    def create_widgets(self):
        Label(self, text = "Enter a message: ").grid(row = 0, column = 0)
-       self.message = Text(self, wrap = WORD, height = 10, width = 10)
+       self.message = Text(self, wrap = WORD, height = 2, width = 20)
        self.message.grid(row = 0, column = 1)
        self.color_button = Button(self,
               text="Color ",
               command=self.change
               )
        self.color_button.grid(row=1, column=0, sticky=W)
-       Label(self, text = "Output"
+       Label(self, text = "Output: "
              ).grid(row = 2, column = 0, sticky = W)
-       self.output = Text(self, wrap = WORD, height = 10, width = 10, fg = "red")
+       self.output = Text(self, wrap = WORD, height = 2, width = 20, fg = "red")
        self.output.grid(row = 2, column = 1)
 
    def change(self):
