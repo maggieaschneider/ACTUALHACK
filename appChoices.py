@@ -1,5 +1,5 @@
 from tkinter import *
-# from academy import academy
+from academy import academy
 # from aesthetic import aesthetic
 from basicCalc import basicCalc
 # from calendar import calendar
