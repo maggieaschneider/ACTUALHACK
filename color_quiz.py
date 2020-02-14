@@ -28,12 +28,12 @@ class color(Frame):
             column += 1
 
         Label(self, text="Pick A Game:").grid(row=5, column=0, sticky=W)
-        self.dessert = StringVar()
-        self.dessert.set(None)
-        desserts = ["hide-and-seek", "tag", "checkers", "pac-man", "simon says", "hopscotch", "jump-rope"]
+        self.game = StringVar()
+        self.game.set(None)
+        games = ["hide-and-seek", "tag", "checkers", "pac-man", "simon says", "hopscotch", "jump-rope"]
         column = 1
-        for word in desserts:
-            Radiobutton(self, text=word, variable=self.dessert, value=word).grid(row=6, column=column, sticky=W)
+        for word in games:
+            Radiobutton(self, text=word, variable=self.game, value=word).grid(row=6, column=column, sticky=W)
             column += 1
 
         Label(self, text="Pick A Fantasy Character:").grid(row=7, column=0, sticky=W)
@@ -47,13 +47,13 @@ class color(Frame):
             column += 1
 
         Label(self, text="Pick A Holiday:").grid(row=9, column=0, sticky=W)
-        self.fantasy = StringVar()
-        self.fantasy.set(None)
-        fantasies = ["christmas", "halloween", "valentine's day", "easter", "hanukkah",
+        self.holiday = StringVar()
+        self.holiday.set(None)
+        holidays = ["christmas", "halloween", "valentine's day", "easter", "hanukkah",
                      "kwanzaa", "diwali"]
         column = 1
-        for word in fantasies:
-            Radiobutton(self, text=word, variable=self.fantasy, value=word).grid(row=10, column=column, sticky=W)
+        for word in holidays:
+            Radiobutton(self, text=word, variable=self.holiday, value=word).grid(row=10, column=column, sticky=W)
             column += 1
 
         submit_bttn = Button(self, text="Click to See Your Result!", command=self.color)

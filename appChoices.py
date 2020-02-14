@@ -1,4 +1,4 @@
-from tkinter import *
+.0from tkinter import *
 from academy import academy
 from basicCalc import basicCalc
 from calendar import calendar
