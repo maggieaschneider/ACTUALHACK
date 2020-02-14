@@ -13,7 +13,6 @@ class click_counter(Frame):
     def update_count(self):
         self.bttn_clicks +=1
         self.bttn["text"] = "Total Clicks: " + str(self.bttn_clicks)
-
 root = Tk()
 root.title("Clicker Counter!")
 app = click_counter(root)
