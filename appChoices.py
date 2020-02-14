@@ -90,7 +90,7 @@ class Main(Frame):
         file_name = ["academy.py", "aesthetic.py", "Basic_calc.py", "calendar.py", "click_counter.py", "color_change.py",
                      "color_person.py", "disney_princess.py", "emoji_gen.py", "font_change.py", "hogwarts_house.py",
                      "mad_lib.py", "mean_median.py", "meme_gen.py", "menu.py", "Periodic_table.py", "rand_num_gen.py",
-                     "spirit_animal.py", "suprise.py", "third_grade_quiz.py", "wallet.py", "workout_excercise.py",
+                     "spirit_animal.py", "surprise.py", "third_grade_quiz.py", "wallet.py", "workout_excercise.py",
                      "zodiac_sign.py"]
         column = 1
         row = 1
