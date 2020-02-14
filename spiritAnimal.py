@@ -9,7 +9,7 @@ class spiritAnimal(Frame):
 
 
     def create_widgets(self):
-        Label(self, text = "Answer these questions to find which princess you are!").grid(row = 0, column = 1, columnspan = 2)
+        Label(self, text = "Answer these questions to see what your spirit animal is!").grid(row = 0, column = 1, columnspan = 2)
 
         # one word
         Label(self, text="Pick one word that describes yourself:", font = ("Verdana", 20)).grid(row=1, column=0, sticky=W)
@@ -90,8 +90,5 @@ class spiritAnimal(Frame):
         self.story_txt.insert(0.0, finalAnswer)
 
 
-root = Tk()
-root.title("Your Spirit Animal!")
-app = spiritAnimal(root)
-root.mainloop()
+
 

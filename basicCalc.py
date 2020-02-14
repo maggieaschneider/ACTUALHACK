@@ -44,7 +44,3 @@ class basicCalc(Frame):
             result = float(first)/float(second)
             Label(self, text=("Answer: %.2f" % (result)), font=("System", 12)).grid(row=7, column=1)
 
-root = Tk()
-root.title("Calculator!")
-app = basicCalc(root)
-root.mainloop()

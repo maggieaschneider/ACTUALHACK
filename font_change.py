@@ -25,7 +25,3 @@ class font_change(Frame):
        new_msg = self.message.get(0.0, END)
        self.output.delete(0.0, END)
        self.output.insert(0.0, new_msg)
-root = Tk()
-root.title("Font Changer!")
-app = font_change(root)
-root.mainloop()

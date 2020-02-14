@@ -13,7 +13,7 @@ class third_grade_quiz(Frame):
        Label(self, text="What color do you get when you mix yellow and blue?").grid(row=1, column=0, sticky=W)
 
        self.color = StringVar()
-       self.color.set(None)a
+       self.color.set(None)
 
        colors = ["red", "orange", "purple", "green"]
        column = 1
@@ -184,9 +184,6 @@ class third_grade_quiz(Frame):
       # self.story_txt.insert(0.0, finalAnswer)
 
 
-root = Tk()
-root.title("Are you Smarter than a Third Grader?")
-app = third_grade_quiz(root)
-root.mainloop()
+
 
 

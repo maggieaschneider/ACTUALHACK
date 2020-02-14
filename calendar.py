@@ -21,8 +21,3 @@ class calendar(Frame):
 
 
 
-root = Tk()
-root.title("Calendar!")
-root.geometry("600x500")
-app = calendar(root)
-root.mainloop()

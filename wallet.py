@@ -45,7 +45,4 @@ class wallet(Frame):
 
 
 
-root = Tk()
-root.title("Piggy Bank!")
-app = wallet(root)
-root.mainloop()
+

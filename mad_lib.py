@@ -189,8 +189,4 @@ class madlib(Frame):
        self.story_txt.delete(0.0, END)
        self.story_txt.insert(0.0, story)
 
-# main
-root = Tk()
-root.title("Original Fantasy")
-app = madlib(root)
-root.mainloop()
+

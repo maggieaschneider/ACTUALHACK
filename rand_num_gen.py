@@ -14,7 +14,3 @@ class rand_num_gen(Frame):
 
     def randomness(self):
         self.margaret["text"] = random.randrange(1,100,1)
-root = Tk()
-root.title("Font Changer!")
-app = rand_num_gen(root)
-root.mainloop()

@@ -25,7 +25,4 @@ class color_changer(Frame):
        new_msg = self.message.get(0.0, END)
        self.output.delete(0.0, END)
        self.output.insert(0.0, new_msg)
-root = Tk()
-root.title("Color Changer!")
-app = color_changer(root)
-root.mainloop()
+

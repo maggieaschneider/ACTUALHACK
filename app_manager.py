@@ -1,8 +1,10 @@
 from tkinter import *
-
+from appChoices import Main
 class App_Manager (object):
     def __init__(self):
         """initialize a new application manager by loading a list of apps from the file and by initializing tkinter"""
+        self.character_choices = Main("ACTUALHACK3.py")
+        self.root = tkinter()
 
         self.app_choices = ("mad_lib.py")
         self.app_choices = ("basicCalc.py")
@@ -26,11 +28,16 @@ class App_Manager (object):
 
 
     def setup_app_selector(self):
-        pass
+        self.root.title("L-CARM")
+
 
 def main():
-    print("Hello")
+    appl = App_Manager()
+    appl.setup_app_selector()
+    appl.root.mainloop()
+
 
 main()
+
 
 

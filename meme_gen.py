@@ -31,11 +31,7 @@ class meme_gen(Frame):
 
 
 
-root = Tk()
-root.title("Meme Generator!")
-root.geometry("1000x1400")
-app = meme_gen(root)
-root.mainloop()
+
 
 
 

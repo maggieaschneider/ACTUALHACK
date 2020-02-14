@@ -100,8 +100,5 @@ class disney_princess(Frame):
         self.story_txt.insert(0.0, finalAnswer)
 
 
-root = Tk()
-root.title("Princesses!")
-app = disney_princess(root)
-root.mainloop()
+
 
