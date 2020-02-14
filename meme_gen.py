@@ -16,15 +16,19 @@ class meme_gen(Frame):
 
     def create_widgets(self):
         Button(self, text="Generate Meme", command=self.generate
-               ).grid(row=0, column=0, sticky=N)
+               ).grid(row=0, column=0, sticky=W)
+
+        self.i = Label(text= "")
+
 
     def generate(self):
+        self.i.destroy()
         meme_num = str(random.randrange(1,31))
         image = PhotoImage(file="images/meme"+meme_num+".gif")
-        i = Label(self, image=image)
-        i.photo = image
-        i.grid(row=5, column=0, sticky=E)
-        self.image.delete(0.0, END)
+        self.i = Label(self, image=image)
+        self.i.photo = image
+        self.i.grid(row=5, column=0, sticky=W)
+
 
 
 root = Tk()
