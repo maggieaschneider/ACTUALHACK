@@ -6,6 +6,11 @@ class App_Manager (object):
 
         self.app_choices = ("mad_lib.py")
         self.app_choices = ("basicCalc.py")
+        self.app_choices = ("calendar.py")
+        self.app_choices = ("Periodic_table.py")
+        self.app_choices = ("surprise.py")
+        self.app_choices = ("meme_gen.py")
+
 
     def setup_app_selector(self):
         pass
