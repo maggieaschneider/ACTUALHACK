@@ -10,7 +10,7 @@ class academy(Frame):
         Label(self, text = "Answer the following questions to discover what BCA academy you belong in!").grid(row = 0, column = 1, columnspan = 2)
 
         # animals
-        Label(self, text="Pick an Animal:").grid(row=1, column=0, sticky=W)
+        Label(self, text="Pick an Animal:", font = ("Helvetica", 20)).grid(row=1, column=0, sticky=W)
         self.animal = StringVar()
         self.animal.set(None)
 
@@ -22,7 +22,7 @@ class academy(Frame):
             column += 1
 
         # sports
-        Label(self, text="Pick a Sport:").grid(row=3, column=0, sticky=W)
+        Label(self, text="Pick a Sport:", font = ("Helvetica", 20)).grid(row=3, column=0, sticky=W)
 
         self.sport = StringVar()
         self.sport.set(None)
@@ -33,7 +33,7 @@ class academy(Frame):
             Radiobutton(self, text=word, variable=self.sport, value=word).grid(row=4, column=column, sticky=W)
             column += 1
 
-        Label(self, text="Pick a Color:").grid(row=5, column=0, sticky=W)
+        Label(self, text="Pick a Color:", font = ("Helvetica", 20)).grid(row=5, column=0, sticky=W)
 
         self.color = StringVar()
         self.color.set(None)
@@ -44,7 +44,7 @@ class academy(Frame):
             Radiobutton(self, text=word, variable=self.color, value=word).grid(row=6, column=column, sticky=W)
             column += 1
 
-        Label(self, text="Pick a Place:").grid(row=7, column=0, sticky=W)
+        Label(self, text="Pick a Place:", font = ("Helvetica", 20)).grid(row=7, column=0, sticky=W)
         self.place = StringVar()
         self.place.set(None)
         places = ["museum", "arcade", "movies", "hiking", "club", "festival", "beach", "restaurant", "picnic"]
@@ -53,7 +53,7 @@ class academy(Frame):
             Radiobutton(self, text=word, variable=self.place, value=word).grid(row=8, column=column, sticky=W)
             column += 1
 
-        submit_bttn = Button(self, text="Click to See Your Result!", command=self.academy)
+        submit_bttn = Button(self, text="Click to See Your Result!", font = ("Helvetica", 20), command=self.academy)
         submit_bttn.grid(row=9, column=0, sticky=W)
         self.story_txt = Text(self, width=75, height=10, wrap=WORD)
         self.story_txt.grid(row=10, column=0, columnspan=4)
