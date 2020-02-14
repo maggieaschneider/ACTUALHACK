@@ -1,8 +1,8 @@
 from tkinter import *
 
-class disney_princess(Frame):
+class third_grade_quiz(Frame):
     def __init__(self, master):
-        super(disney_princess, self).__init__(master)
+        super(third_grade_quiz, self).__init__(master)
         self.grid()
         self.create_widgets()
 
@@ -186,6 +186,6 @@ class disney_princess(Frame):
 
 root = Tk()
 root.title("Are you Smarter than a Third Grader?")
-app = disney_princess(root)
+app = third_grade_quiz(root)
 root.mainloop()
 
